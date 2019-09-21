@@ -1,7 +1,16 @@
-# emp-portal
-This is a spring boot project to demonstrate spring boot capabilities via a MVC based sample application.
+# Project Description
+This is a spring boot project to demonstrate spring boot capabilities via a MVC based sample application.</br>
+Using : </br>
+- Spring boot version 2.1.3.RELEASE
+- Java Version 1.8
+- H2 DB Version 1.4.19
+# prerequisites tools
+ - Eclipse or Spring Tool Suite (Preferred)
+ - Java 8
+ - Maven
+ - Postman
 # Installation
-clone or download the repository and import the project in Spring Tool Suite
+clone or download the repository, unzip and import the project in Spring Tool Suite
 # Usage
 Run the class EmpPortalApplication as SpringBootApplication
 
