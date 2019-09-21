@@ -9,10 +9,15 @@ Using : </br>
  - Java 8
  - Maven
  - Postman
+
 # Installation
-clone the repository or download the zip file, unzip and import the project in Spring Tool Suite
+  clone this repository or download the zip file, unzip and import the project in Spring Tool Suite.
+
 # Usage
-Run the class EmpPortalApplication as SpringBootApplication
+- Run the class EmpPortalApplication as a SpringBootApplication
+- Call the GET API to create some Employees in the DB
+- To verify the saved data in H2 DB access broswer console: http://localhost:8080/h2-console
+- run the query:  select  * EMPLOYEE;
 
 # API End Points
 **Use Case #1 : Create an employee**
