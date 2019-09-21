@@ -4,13 +4,13 @@ Using : </br>
 - Spring boot version 2.1.3.RELEASE
 - Java Version 1.8
 - H2 DB Version 1.4.19
-# prerequisites tools
+# Prerequisites Tools
  - Eclipse or Spring Tool Suite (Preferred)
  - Java 8
  - Maven
  - Postman
 # Installation
-clone or download the repository, unzip and import the project in Spring Tool Suite
+clone the repository or download the zip file, unzip and import the project in Spring Tool Suite
 # Usage
 Run the class EmpPortalApplication as SpringBootApplication
 
