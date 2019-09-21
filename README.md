@@ -1,2 +1,2 @@
 # emp-portal
-This is a spring boot project for employee portal test
+This is a spring boot project to demonstrade spring boot's capability via a MVC based sample application.
