@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class DateValidator {
 
-	private SimpleDateFormat sdf= new SimpleDateFormat("dd/MM/yyyy");
+	private SimpleDateFormat sdf= new SimpleDateFormat("dd-MM-yyyy");
 	
 	public boolean isValidDate(String dateStr) {
 			

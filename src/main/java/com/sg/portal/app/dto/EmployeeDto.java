@@ -27,11 +27,11 @@ public class EmployeeDto {
 	@Pattern(regexp = "^[a-zA-Z\\s]*$", message="{field.error.message.allows.alphabets}")
 	private String lastName;
 	
-	@NotBlank(message = "{field.error.message.notnull.blank}")
+	@NotNull(message = "{field.error.message.notnull.blank}")
 	@Pattern(regexp = "^male$|^Male$|^Female$|^female$",  message="{field.error.message.allows.male.female}")
     private String gender;
 	
-	@NotBlank(message = "{field.error.message.notnull.blank}")
+	@NotNull(message = "{field.error.message.notnull.blank}")
 	@Pattern(regexp = "^((0|1)\\d{1})-((0|1|2)\\d{1})-((19|20)\\d{2})", message="{field.error.message.allows.date}")
 	private String dob;
 	
