@@ -50,9 +50,10 @@ Note: this is the default ordering if "sort" optional param is not passed
 **Use Case #3.3 : Get all the employee details in ascending order by last name**
 - Http GET  http://localhost:8080/api/employee/all?sort=lastName </br>
     
-**Validations**
+# Validations
 - Field validations are performed through javax.validation f/w on EmployeeDto bean
 - Validation messages are picked from messages.properties
+- validations include not-null, not-empty checks, dob format, dob not greater than current date etc.
 
 
 
