@@ -11,13 +11,17 @@ Using : </br>
  - Postman
 
 # Installation
-  clone this repository or download the zip file, unzip and import the project in Spring Tool Suite.
+  - clone this repository or download the zip file, unzip and import the project in Spring Tool Suite.
+  - right click pom.xml and run as maven install  (This will build the project & also invoke Test cases)
 
 # Usage
 - Run the class EmpPortalApplication as a SpringBootApplication
 - Call the GET API to create some Employees in the DB
 - To verify the saved data in H2 DB access broswer console: http://localhost:8080/h2-console
 - run the query:  select  * EMPLOYEE;
+
+# Logging
+- logs are printed in logs/server.log  (configurable in application.properties)
 
 # API End Points
 **Use Case #1 : Create an employee**
@@ -46,7 +50,9 @@ Note: this is the default ordering if "sort" optional param is not passed
 **Use Case #3.3 : Get all the employee details in ascending order by last name**
 - Http GET  http://localhost:8080/api/employee/all?sort=lastName </br>
     
-
+**Validations**
+- Field validations are performed through javax.validation f/w on EmployeeDto bean
+- Validation messages are picked from messages.properties
 
 
 
