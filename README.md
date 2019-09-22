@@ -4,6 +4,8 @@ Using : </br>
 - Spring boot version 2.1.3.RELEASE
 - Java Version 1.8
 - H2 DB Version 1.4.19
+- http://localhost:8080/actuator/info
+
 # Prerequisites Tools
  - Eclipse or Spring Tool Suite (Preferred)
  - Java 8
@@ -54,6 +56,10 @@ Note: this is the default ordering if "sort" optional param is not passed
 - Field validations are performed through javax.validation f/w on EmployeeDto bean
 - Validation messages are picked from messages.properties
 - validations include not-null, not-empty checks, dob format, dob not greater than current date etc.
+
+# Monitoring
+http://localhost:8080/actuator/health
+
 
 
 
