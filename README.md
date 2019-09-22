@@ -29,7 +29,7 @@ Using : </br>
 **Use Case #1 : Create an employee**
 - Http POST  http://localhost:8080/api/employee </br>
 - Sample Request#1 body param: </br>
-<pre>
+
       {	</br>
 	        "firstName":"Prakash",</br>
 	        "lastName":"Rao",</br>
@@ -46,20 +46,20 @@ Using : </br>
         }</br>
 	
 - Sample Request#2 body param: </br>
-      {	</br>
-	        "firstName":"Prakash",</br>
-	        "lastName":"123",</br>
-	        "gender":"xyz",</br>
-	        "dob":"19/11/1978",</br>
-	        "department":"IT"</br>
-	      } </br>
+        +{	</br>
+	       + "firstName":"Prakash",</br>
+	       + "lastName":"123",</br>
+	       +  "gender":"xyz",</br>
+	       + "dob":"19/11/1978",</br>
+	       +  "department":"IT"</br>
+	+  } </br>
 	Response: </br>
 	{</br>
     		"lastName": "Field allows only alphabets",</br>
     		"gender": "Field allows only Male|male|Female|female",</br>
     		"dob": "Field must be in dd-mm-yyyy format"</br>
 	}</br>
-	</pre>
+	
 			
 **Use Case #2 : Get an employee**
 - Http GET  http://localhost:8080/api/employee/{Id} </br>
