@@ -37,27 +37,26 @@ Using : </br>
 	        "department":"IT" </br>
 	      } </br>
 				
-	
-	Reponse: </br>
+ Reponse: </br>
 	{ </br>
            "Id": 1,</br>
            "Status": "Created Successfully" </br>
         } </br>
 	
 - Sample Request#2 body param: </br>
-        +{	</br>
-	       + "firstName":"Prakash",</br>
-	       + "lastName":"123",</br>
-	       +  "gender":"xyz",</br>
-	       + "dob":"19/11/1978",</br>
-	       +  "department":"IT"</br>
-	+  } </br>
-	Response: </br>
+            {	</br>
+	        "firstName":"Prakash", </br>
+	        "lastName":"123", </br>
+	        "gender":"xyz", </br>
+	        "dob":"19/11/1978", </br>
+	        "department":"IT" </br>
+	    } </br>
+Response: </br>
 	{</br>
-    		"lastName": "Field allows only alphabets",</br>
-    		"gender": "Field allows only Male|male|Female|female",</br>
-    		"dob": "Field must be in dd-mm-yyyy format"</br>
-	}</br>
+    	   "lastName": "Field allows only alphabets",</br>
+    	   "gender": "Field allows only Male|male|Female|female",</br>
+    	   "dob": "Field must be in dd-mm-yyyy format"</br>
+	} </br>
 	
 			
 **Use Case #2 : Get an employee**
