@@ -29,21 +29,20 @@ Using : </br>
 **Use Case #1 : Create an employee**
 - Http POST  http://localhost:8080/api/employee </br>
 - Sample Request#1 body param: </br>
-
-      {	</br>
-	        "firstName":"Prakash",</br>
-	        "lastName":"Rao",</br>
-	        "gender":"Male",</br>
-	        "dob":"19/11/1978",</br>
-	        "department":"IT"</br>
-	      } 
-				</br>
+	     {	</br>
+	        "firstName":"Prakash", </br>
+	        "lastName":"Rao", </br>
+	        "gender":"Male",  </br>
+	        "dob":"19/11/1978",  </br>
+	        "department":"IT" </br>
+	      } </br>
+				
 	
 	Reponse: </br>
 	{ </br>
            "Id": 1,</br>
-           "Status": "Created Successfully"</br>
-        }</br>
+           "Status": "Created Successfully" </br>
+        } </br>
 	
 - Sample Request#2 body param: </br>
         +{	</br>
