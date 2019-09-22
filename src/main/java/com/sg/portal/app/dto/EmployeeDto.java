@@ -1,8 +1,8 @@
 package com.sg.portal.app.dto;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 
 public class EmployeeDto {
@@ -19,19 +19,24 @@ public class EmployeeDto {
 		this.department = department;
 	}
 	
-	@NotBlank(message = "field can't be null or blank")
+	@NotBlank(message = "{field.error.message.notnull.blank}")
+	@Pattern(regexp = "^[a-zA-Z\\s]*$", message="{field.error.message.allows.alphabets}")
 	private String firstName;
 	
-	@NotBlank(message = "field can't be null or blank")
+	@NotBlank(message = "{field.error.message.notnull.blank}")
+	@Pattern(regexp = "^[a-zA-Z\\s]*$", message="{field.error.message.allows.alphabets}")
 	private String lastName;
 	
-	@NotBlank(message = "field can't be null or blank")
+	@NotBlank(message = "{field.error.message.notnull.blank}")
+	@Pattern(regexp = "^male$|^Male$|^Female$|^female$",  message="{field.error.message.allows.male.female}")
     private String gender;
 	
-	@NotBlank(message = "field can't be null or blank")
+	@NotBlank(message = "{field.error.message.notnull.blank}")
+	@Pattern(regexp = "^((0|1)\\d{1})-((0|1|2)\\d{1})-((19|20)\\d{2})", message="{field.error.message.allows.date}")
 	private String dob;
 	
-	@NotBlank(message = "field can't be null or blank")
+	@NotBlank(message = "{field.error.message.notnull.blank}")
+	@Pattern(regexp = "^[a-zA-Z\\s]*$", message="{field.error.message.allows.alphabets}")
 	private String department;
 	
 	public String getFirstName() {
